@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3029315D15B32E1400CD7737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029315C15B32E1400CD7737 /* UIKit.framework */; };
+		3029315F15B32E1400CD7737 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029315E15B32E1400CD7737 /* Foundation.framework */; };
+		3029316115B32E1400CD7737 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029316015B32E1400CD7737 /* CoreGraphics.framework */; };
+		3029316715B32E1400CD7737 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3029316515B32E1400CD7737 /* InfoPlist.strings */; };
+		3029316915B32E1400CD7737 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029316815B32E1400CD7737 /* main.m */; };
+		3029316D15B32E1400CD7737 /* SRKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029316C15B32E1400CD7737 /* SRKAppDelegate.m */; };
+		3029317015B32E1400CD7737 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3029316E15B32E1400CD7737 /* MainStoryboard.storyboard */; };
+		3029317315B32E1400CD7737 /* SRKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029317215B32E1400CD7737 /* SRKMainViewController.m */; };
+		3029317615B32E1400CD7737 /* SRKFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029317515B32E1400CD7737 /* SRKFlipsideViewController.m */; };
+		3029318315B32E7600CD7737 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029317F15B32E7600CD7737 /* AVFoundation.framework */; };
+		3029318415B32E7600CD7737 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029318015B32E7600CD7737 /* AudioToolbox.framework */; };
+		3029318515B32E7600CD7737 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029318115B32E7600CD7737 /* CFNetwork.framework */; };
+		3029318615B32E7600CD7737 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029318215B32E7600CD7737 /* MediaPlayer.framework */; };
+		3029318C15B32EFF00CD7737 /* libRadioKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029318915B32EFF00CD7737 /* libRadioKit.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		3029318E15B331B000CD7737 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029318D15B331B000CD7737 /* SystemConfiguration.framework */; };
+		302931D515B380F900CD7737 /* ff.png in Resources */ = {isa = PBXBuildFile; fileRef = 302931CE15B380F900CD7737 /* ff.png */; };
+		302931D715B380F900CD7737 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 302931D015B380F900CD7737 /* pause.png */; };
+		302931D815B380F900CD7737 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 302931D115B380F900CD7737 /* play.png */; };
+		302931D915B380F900CD7737 /* RadioKitImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 302931D215B380F900CD7737 /* RadioKitImage.png */; };
+		302931DA15B380F900CD7737 /* rew.png in Resources */ = {isa = PBXBuildFile; fileRef = 302931D315B380F900CD7737 /* rew.png */; };
+		302931DB15B380F900CD7737 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 302931D415B380F900CD7737 /* stop.png */; };
+		30D64C8715EEDA4500C22A18 /* Visuallizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D64C8415EED6E800C22A18 /* Visuallizer.m */; };
+		30D64C8B15EEDCF200C22A18 /* ff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D64C8815EEDCF200C22A18 /* ff@2x.png */; };
+		30D64C8C15EEDCF200C22A18 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D64C8915EEDCF200C22A18 /* play@2x.png */; };
+		30D64C8D15EEDCF200C22A18 /* rew@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D64C8A15EEDCF200C22A18 /* rew@2x.png */; };
+		5C91E9AF17EDCDBD00BEA58B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C91E9AE17EDCDBD00BEA58B /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3029315815B32E1400CD7737 /* RadioKit Single View Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RadioKit Single View Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3029315C15B32E1400CD7737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3029315E15B32E1400CD7737 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3029316015B32E1400CD7737 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3029316415B32E1400CD7737 /* RadioKit Single View Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadioKit Single View Demo-Info.plist"; sourceTree = "<group>"; };
+		3029316615B32E1400CD7737 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3029316815B32E1400CD7737 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3029316A15B32E1400CD7737 /* RadioKit Single View Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RadioKit Single View Demo-Prefix.pch"; sourceTree = "<group>"; };
+		3029316B15B32E1400CD7737 /* SRKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRKAppDelegate.h; sourceTree = "<group>"; };
+		3029316C15B32E1400CD7737 /* SRKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRKAppDelegate.m; sourceTree = "<group>"; };
+		3029316F15B32E1400CD7737 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3029317115B32E1400CD7737 /* SRKMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRKMainViewController.h; sourceTree = "<group>"; };
+		3029317215B32E1400CD7737 /* SRKMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRKMainViewController.m; sourceTree = "<group>"; };
+		3029317415B32E1400CD7737 /* SRKFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRKFlipsideViewController.h; sourceTree = "<group>"; };
+		3029317515B32E1400CD7737 /* SRKFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRKFlipsideViewController.m; sourceTree = "<group>"; };
+		3029317F15B32E7600CD7737 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3029318015B32E7600CD7737 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3029318115B32E7600CD7737 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3029318215B32E7600CD7737 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3029318815B32EFF00CD7737 /* BufferView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferView.h; sourceTree = "<group>"; };
+		3029318915B32EFF00CD7737 /* libRadioKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRadioKit.a; sourceTree = "<group>"; };
+		3029318A15B32EFF00CD7737 /* RadioKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioKit.h; sourceTree = "<group>"; };
+		3029318B15B32EFF00CD7737 /* reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reachability.h; sourceTree = "<group>"; };
+		3029318D15B331B000CD7737 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		302931CE15B380F900CD7737 /* ff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ff.png; path = "RadioKit XCode Demo/Assets/ff.png"; sourceTree = SOURCE_ROOT; };
+		302931D015B380F900CD7737 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = "RadioKit XCode Demo/Assets/pause.png"; sourceTree = SOURCE_ROOT; };
+		302931D115B380F900CD7737 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = "RadioKit XCode Demo/Assets/play.png"; sourceTree = SOURCE_ROOT; };
+		302931D215B380F900CD7737 /* RadioKitImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RadioKitImage.png; path = "RadioKit XCode Demo/Assets/RadioKitImage.png"; sourceTree = SOURCE_ROOT; };
+		302931D315B380F900CD7737 /* rew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rew.png; path = "RadioKit XCode Demo/Assets/rew.png"; sourceTree = SOURCE_ROOT; };
+		302931D415B380F900CD7737 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop.png; path = "RadioKit XCode Demo/Assets/stop.png"; sourceTree = SOURCE_ROOT; };
+		30D64C8315EED6E800C22A18 /* Visuallizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visuallizer.h; sourceTree = "<group>"; };
+		30D64C8415EED6E800C22A18 /* Visuallizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visuallizer.m; sourceTree = "<group>"; };
+		30D64C8815EEDCF200C22A18 /* ff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ff@2x.png"; path = "RadioKit XCode Demo/Assets/ff@2x.png"; sourceTree = SOURCE_ROOT; };
+		30D64C8915EEDCF200C22A18 /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play@2x.png"; path = "RadioKit XCode Demo/Assets/play@2x.png"; sourceTree = SOURCE_ROOT; };
+		30D64C8A15EEDCF200C22A18 /* rew@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rew@2x.png"; path = "RadioKit XCode Demo/Assets/rew@2x.png"; sourceTree = SOURCE_ROOT; };
+		5C91E9AE17EDCDBD00BEA58B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3029315515B32E1400CD7737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3029315D15B32E1400CD7737 /* UIKit.framework in Frameworks */,
+				3029315F15B32E1400CD7737 /* Foundation.framework in Frameworks */,
+				3029316115B32E1400CD7737 /* CoreGraphics.framework in Frameworks */,
+				3029318315B32E7600CD7737 /* AVFoundation.framework in Frameworks */,
+				3029318415B32E7600CD7737 /* AudioToolbox.framework in Frameworks */,
+				3029318515B32E7600CD7737 /* CFNetwork.framework in Frameworks */,
+				3029318615B32E7600CD7737 /* MediaPlayer.framework in Frameworks */,
+				3029318C15B32EFF00CD7737 /* libRadioKit.a in Frameworks */,
+				3029318E15B331B000CD7737 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3029314D15B32E1400CD7737 = {
+			isa = PBXGroup;
+			children = (
+				30D64C8615EED6F000C22A18 /* Visualizer */,
+				302931B215B3502C00CD7737 /* Images */,
+				3029318715B32EFF00CD7737 /* RadioKitLib */,
+				3029316215B32E1400CD7737 /* RadioKit XCode Demo */,
+				3029315B15B32E1400CD7737 /* Frameworks */,
+				3029315915B32E1400CD7737 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3029315915B32E1400CD7737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3029315815B32E1400CD7737 /* RadioKit Single View Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3029315B15B32E1400CD7737 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3029318D15B331B000CD7737 /* SystemConfiguration.framework */,
+				3029317F15B32E7600CD7737 /* AVFoundation.framework */,
+				3029318015B32E7600CD7737 /* AudioToolbox.framework */,
+				3029318115B32E7600CD7737 /* CFNetwork.framework */,
+				3029318215B32E7600CD7737 /* MediaPlayer.framework */,
+				3029315C15B32E1400CD7737 /* UIKit.framework */,
+				3029315E15B32E1400CD7737 /* Foundation.framework */,
+				3029316015B32E1400CD7737 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3029316215B32E1400CD7737 /* RadioKit XCode Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3029316B15B32E1400CD7737 /* SRKAppDelegate.h */,
+				3029316C15B32E1400CD7737 /* SRKAppDelegate.m */,
+				3029316E15B32E1400CD7737 /* MainStoryboard.storyboard */,
+				3029317115B32E1400CD7737 /* SRKMainViewController.h */,
+				3029317215B32E1400CD7737 /* SRKMainViewController.m */,
+				3029317415B32E1400CD7737 /* SRKFlipsideViewController.h */,
+				3029317515B32E1400CD7737 /* SRKFlipsideViewController.m */,
+				5C91E9AE17EDCDBD00BEA58B /* Images.xcassets */,
+				3029316315B32E1400CD7737 /* Supporting Files */,
+			);
+			path = "RadioKit XCode Demo";
+			sourceTree = "<group>";
+		};
+		3029316315B32E1400CD7737 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3029316415B32E1400CD7737 /* RadioKit Single View Demo-Info.plist */,
+				3029316515B32E1400CD7737 /* InfoPlist.strings */,
+				3029316815B32E1400CD7737 /* main.m */,
+				3029316A15B32E1400CD7737 /* RadioKit Single View Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3029318715B32EFF00CD7737 /* RadioKitLib */ = {
+			isa = PBXGroup;
+			children = (
+				3029318815B32EFF00CD7737 /* BufferView.h */,
+				3029318915B32EFF00CD7737 /* libRadioKit.a */,
+				3029318A15B32EFF00CD7737 /* RadioKit.h */,
+				3029318B15B32EFF00CD7737 /* reachability.h */,
+			);
+			name = RadioKitLib;
+			path = "RadioKit XCode Demo/RadioKitLib";
+			sourceTree = "<group>";
+		};
+		302931B215B3502C00CD7737 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				302931CE15B380F900CD7737 /* ff.png */,
+				30D64C8815EEDCF200C22A18 /* ff@2x.png */,
+				302931D015B380F900CD7737 /* pause.png */,
+				302931D115B380F900CD7737 /* play.png */,
+				30D64C8915EEDCF200C22A18 /* play@2x.png */,
+				302931D215B380F900CD7737 /* RadioKitImage.png */,
+				302931D315B380F900CD7737 /* rew.png */,
+				30D64C8A15EEDCF200C22A18 /* rew@2x.png */,
+				302931D415B380F900CD7737 /* stop.png */,
+			);
+			name = Images;
+			path = "RadioKit XCode Demo/RadioKitLib";
+			sourceTree = "<group>";
+		};
+		30D64C8615EED6F000C22A18 /* Visualizer */ = {
+			isa = PBXGroup;
+			children = (
+				30D64C8315EED6E800C22A18 /* Visuallizer.h */,
+				30D64C8415EED6E800C22A18 /* Visuallizer.m */,
+			);
+			name = Visualizer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3029315715B32E1400CD7737 /* RadioKit Single View Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3029317915B32E1400CD7737 /* Build configuration list for PBXNativeTarget "RadioKit Single View Demo" */;
+			buildPhases = (
+				3029315415B32E1400CD7737 /* Sources */,
+				3029315515B32E1400CD7737 /* Frameworks */,
+				3029315615B32E1400CD7737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RadioKit Single View Demo";
+			productName = "RadioKit XCode Demo";
+			productReference = 3029315815B32E1400CD7737 /* RadioKit Single View Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3029314F15B32E1400CD7737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SRK;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Stormy Productions";
+			};
+			buildConfigurationList = 3029315215B32E1400CD7737 /* Build configuration list for PBXProject "RadioKit Single View Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3029314D15B32E1400CD7737;
+			productRefGroup = 3029315915B32E1400CD7737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3029315715B32E1400CD7737 /* RadioKit Single View Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3029315615B32E1400CD7737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3029316715B32E1400CD7737 /* InfoPlist.strings in Resources */,
+				3029317015B32E1400CD7737 /* MainStoryboard.storyboard in Resources */,
+				302931D515B380F900CD7737 /* ff.png in Resources */,
+				5C91E9AF17EDCDBD00BEA58B /* Images.xcassets in Resources */,
+				302931D715B380F900CD7737 /* pause.png in Resources */,
+				302931D815B380F900CD7737 /* play.png in Resources */,
+				302931D915B380F900CD7737 /* RadioKitImage.png in Resources */,
+				302931DA15B380F900CD7737 /* rew.png in Resources */,
+				302931DB15B380F900CD7737 /* stop.png in Resources */,
+				30D64C8B15EEDCF200C22A18 /* ff@2x.png in Resources */,
+				30D64C8C15EEDCF200C22A18 /* play@2x.png in Resources */,
+				30D64C8D15EEDCF200C22A18 /* rew@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3029315415B32E1400CD7737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3029316915B32E1400CD7737 /* main.m in Sources */,
+				3029316D15B32E1400CD7737 /* SRKAppDelegate.m in Sources */,
+				3029317315B32E1400CD7737 /* SRKMainViewController.m in Sources */,
+				3029317615B32E1400CD7737 /* SRKFlipsideViewController.m in Sources */,
+				30D64C8715EEDA4500C22A18 /* Visuallizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3029316515B32E1400CD7737 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3029316615B32E1400CD7737 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3029316E15B32E1400CD7737 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3029316F15B32E1400CD7737 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3029317715B32E1400CD7737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3029317815B32E1400CD7737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3029317A15B32E1400CD7737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadioKit XCode Demo/RadioKit Single View Demo-Prefix.pch";
+				INFOPLIST_FILE = "RadioKit XCode Demo/RadioKit Single View Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RadioKit XCode Demo/RadioKitLib\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompanyname.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "RadioKit Single View Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3029317B15B32E1400CD7737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadioKit XCode Demo/RadioKit Single View Demo-Prefix.pch";
+				INFOPLIST_FILE = "RadioKit XCode Demo/RadioKit Single View Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RadioKit XCode Demo/RadioKitLib\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompanyname.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "RadioKit Single View Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3029315215B32E1400CD7737 /* Build configuration list for PBXProject "RadioKit Single View Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3029317715B32E1400CD7737 /* Debug */,
+				3029317815B32E1400CD7737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3029317915B32E1400CD7737 /* Build configuration list for PBXNativeTarget "RadioKit Single View Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3029317A15B32E1400CD7737 /* Debug */,
+				3029317B15B32E1400CD7737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3029314F15B32E1400CD7737 /* Project object */;
+}
