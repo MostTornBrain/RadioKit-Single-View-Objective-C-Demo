@@ -5,7 +5,7 @@ This is a simple demonstation of using the [RadioKit SDK](http://www.stormyprods
 single view radio app.   It shows the use of the rewind and fast forward controls as well as using a simple 4-bar
 audio-gain visualization that moves in response to the stereo channel volume during stream playback.
 
-The purpose of this is to demonstrate how to use the streaming functionality of RadioKit. This is not meant to be a complete app. I am not an artist or graphic designer, so the visual look of this demo is very bare-bones.
+The purpose of this is to demonstrate how to use the streaming functionality of RadioKit in an Objective-C project. This is not meant to be a complete app. I am not an artist or graphic designer, so the visual look of this demo is very bare-bones.
 
 ![alt text](http://www.stormyprods.com/products/images/IMG_1575.PNG "RadioKit")
 
